@@ -1,0 +1,28 @@
+/* Styling sidebar background and dimensions */
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 1;
+  display: flex; /* Menggunakan flexbox untuk konten di tengah */
+  flex-direction: column; /* Kontennya ditata secara vertikal */
+  justify-content: center; /* Mengatur konten secara vertikal di tengah */
+  align-items: center; /* Mengatur konten secara horizontal di tengah */
+  padding: 20px;
+  
+}
+/* Styling sidebar links */
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #777;
+}

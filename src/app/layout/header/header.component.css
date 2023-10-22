@@ -1,0 +1,22 @@
+/* Styling header background, text, and padding */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Styling header links */
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}

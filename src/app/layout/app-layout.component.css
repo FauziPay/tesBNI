@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Styling the overall container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Styling the main content area */
+.app-main {
+  display: flex;
+  flex: 1;
+}
+
+/* Styling the sidebar */
+.app-sidebar {
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+}
+
+/* Styling the sidebar links */
+.app-sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.app-sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Styling the header */
+.app-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Styling the footer */
+.app-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
