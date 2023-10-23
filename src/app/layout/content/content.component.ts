@@ -7,13 +7,32 @@ import { JsonPlaceholderService } from 'src/app/json-placeholder.service';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  guides: any[] = [];
+  posts: any[] = [];
+  loading: boolean = true;
   
   constructor(private jsonPlaceholderService: JsonPlaceholderService) {}
 
   ngOnInit() {
-    this.jsonPlaceholderService.getGuides().subscribe(data => {
-      this.guides = data;
+    this.getAllPost();
+  }
+
+  getAllPost(){
+    this.jsonPlaceholderService.getPosts().subscribe(data => {
+      this.posts = data;
+      this.loading = false;
+    });
+  }
+
+  getByIdUpdate(id: any){
+    this.jsonPlaceholderService.getPostsById(id).subscribe(data => {
+      console.log(data, "getById");
+    });
+  }
+
+  deletePost(id: any){
+    this.jsonPlaceholderService.deletePosts(id).subscribe(data => {
+      console.log(data, "deleteById");
+      this.getAllPost();
     });
   }
 
